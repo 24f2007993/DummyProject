@@ -3,24 +3,27 @@
     
 }
 #main{
-    border: 2px solid blue;
+    border: 3px solid blue;
     height: 100vh;
     width: 100%;
 }
 #canvas{
-    height: 500px;
-    width: 480px;
+    height: 726px;
+    width: 750px;
     border: 2px solid red;
     margin: auto;
-    margin-top: 60px;
+    
 }
 #form-body{
     border: 1px solid grey;
-    height: 400px;
-    width: 300px;
+    height: 500px;
+    width: 400px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 150px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 2px 12px grey;
+}
+.form-group{
+    color: rgb(0, 208, 255);
 }

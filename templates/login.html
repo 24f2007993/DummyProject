@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Login Page{% endblock %}
+{% block content %} 
+<div id = 'main'>
+    <div align = 'center' id = 'canvas'>
+       <div id = 'form-body'>
+        <form action = ''>
+            <h2 align = 'center'>Login Form</h2><br>
+            <div class = 'form-group'>        
+            <div class = 'form-group'>
+            <label for = 'email'>Email: </label>
+            <input type = 'email' id = 'email' name = 'email' placeholder = 'Enter your email: '>
+            </div>
+            <br>
+            <div class = 'form-group'>
+            <label for = 'password1'>Password: </label>
+            <input type = 'password' id = 'password1' name = 'password1' placeholder = 'Enter your password: '>
+            </div>
+            <br>
+            <input type = 'submit' value = 'Login'><br><br>
+            Not an user? <a href = 'signUp.html'>Register</a>
+        </form>
+       </div>
+    </div>
+</div>
+{% endblock %}

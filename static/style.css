@@ -17,13 +17,16 @@
 #form-body{
     border: 1px solid grey;
     height: 500px;
-    width: 400px;
-    margin: auto;
-    margin-top: 150px;
+    width: 600px;
+    margin-left: 0px;
+    margin-top: 100px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 2px 2px 12px grey;
 }
 .form-group{
     color: rgb(0, 208, 255);
+    margin-top: 0px;
+    padding: 10px;
 }
+

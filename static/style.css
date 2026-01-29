@@ -4,29 +4,31 @@
 }
 #main{
     border: 3px solid blue;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 #canvas{
-    height: 726px;
-    width: 750px;
-    border: 2px solid red;
-    margin: auto;
+    height: auto;
+    width: 100%;
+    border: none;
+    margin-top: 50px;
     
 }
 #form-body{
     border: 1px solid grey;
-    height: 500px;
-    width: 600px;
-    margin-left: 0px;
-    margin-top: 100px;
+    height: auto;
+    width: 500px;
+    margin:0 auto;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 2px 2px 12px grey;
 }
-.form-group{
+.form-level{
     color: rgb(0, 208, 255);
-    margin-top: 0px;
-    padding: 10px;
+    /* margin-top: 0px;
+    padding: 10px; */
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
 }
 

@@ -18,5 +18,11 @@ def update():
 @app.route('/requestProduct')
 def request():
     return render_template('request.html')
+@app.route('/user')
+def user():
+    return render_template('user_dash.html')
+@app.route('/manager')
+def manager():
+    return render_template('manager_dash.html')
 if __name__ == '__main__':
     app.run(debug = True)

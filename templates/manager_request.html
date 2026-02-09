@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}User Dashboard{% endblock %}
+{% block title %}Manager Requests{% endblock %}
 {% block content %}
 <div id="content">
     <h3 class="heading">View All Requests</h3>
@@ -8,12 +8,13 @@
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">productName</th>
+                    <th scope="col">userName</th>
                     <th scope="col">Category</th>
                     <th scope="col">Units Requested</th>
                     <th scope="col">Cost/Unit</th>
                     <th scope="col">Net Amount</th>
-                    <th scope="col">Status</th>
+                    <th scope="col" class = 'text-center'>Actions</th>
                     
                 </tr>
             </thead>
@@ -22,18 +23,20 @@
                 <tr>
                     <td>{{ product.id }}</td>
                     <td>{{ product.name }}</td>
+                    <td>{{ product.username }}</td>
                     <td>{{ product.category }}</td>
                     <td>{{ product.quantity }}</td>
                     <td>{{ product.cost_per_unit }}</td>
                     <td>{{ product.quantity * product.cost_per_unit }}</td>
-                    <td>{{ product.status }}</td>
+                    <td>
+                        <a href="{{ url_for('update_product', product_id=product.id) }}" class="btn btn-success">Approve</a>
+                        <a href="{{ url_for('request_product', product_id=product.id) }}" class="btn btn-danger">Deny</a>
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
-    <div>
-        <h3>Total Amount Payable: {{ total_amount }}</h3>
-    </div>
+    
 </div>
 {% endblock%}

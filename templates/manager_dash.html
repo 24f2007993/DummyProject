@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}User Dashboard{% endblock %}
+{% block title %}Manager Dashboard{% endblock %}
 {% block content %}
 <div id="content">
     <h3 class="heading">View All Products</h3>
@@ -27,12 +27,14 @@
                     <td>{{ product.status }}</td>
                     <td>
                         <!-- <a href="{{ url_for('update_product', product_id=product.id) }}" class="btn btn-primary">Update</a> -->
-                        <a href="{{ url_for('request_product', product_id=product.id) }}" class="btn btn-secondary">Request</a>
-                    </td>
+                        <a href="{{ url_for('update_product', product_id=product.id) }}" class="btn btn-secondary">Update</a>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
+    </div>
+    <div class="text-end">
+        <a href = 'create_product' class="btn btn-primary mx-2 my-4">Create Product</a>
     </div>
 </div>
 {% endblock%}
